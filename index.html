@@ -26,9 +26,11 @@
       border-radius: 6px;
       margin-bottom:40px;  
       top:0;
+      margin-top: -10px;
       border:black 0.5px solid;
       transform:rotate(2deg);
-      transition-property: background-color;}
+      transition-property: background-color;
+      transition: all 0.3s ease-in-out;}
 
       .carte:hover .texte{
         background-color: #dddddd  ;
@@ -87,11 +89,11 @@
 
     .carte{
       margin-right:40px;
-      transition-property: width;
-      transition-duration: 0.3s;
+      transition-property: transform;
+      transition: all 0.3s ease-in-out;
     }
     .carte:hover {
-      width:105%;
+      transform: scale(1.05);
 
     }
 </style>
