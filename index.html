@@ -1,150 +1,183 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stranger Things</title>
-  <style type="text/css" >
-    body{
+  <style type="text/css">
+    body {
       background-color: #000000;
-      }
+    }
 
-    img{
+    img {
       width: 100%;
-      display:block;
-      }
+    }
 
-    .person{
+    .person {
       width: 100%;
-      margin-left:20px;
-      margin-right:20px;
-      
-      }
-      .texte{
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+
+    }
+
+    .texte {
       position: relative;
+      display: block;
       background-color: #f5f5dc;
       border-radius: 6px;
-      margin-bottom:40px;  
-      top:0;
+      margin-bottom: 40px;
+      top: 0;
       margin-top: -10px;
-      border:black 0.5px solid;
-      transform:rotate(2deg);
+      border: black 0.5px solid;
+      transform: rotate(2deg);
       transition-property: background-color;
-      transition: all 0.3s ease-in-out;}
-
-      .carte:hover .texte{
-        background-color: #dddddd  ;
-      }
-
-
-    .dustin{
-      background-image : linear-gradient(#e8f5ff,  #45b2ff);
-      border-radius: 50%;
-      z-index: -1;
-      content: " ";
-      position:relative;
-      }
-
-    .lucas{
-      background-image : linear-gradient(#ffa76a, #ff4431);
-      border-radius: 50%;
-      z-index: -1;
-      content: " ";
-      position:relative;
-      }
-
-    .onze{
-      background-image : linear-gradient(#9a8478, #1e130c);
-      border-radius: 50%;
-      z-index: -1;
-      content: " ";
-      position:relative;
-      }
-
-    .mike{
-      background-image : linear-gradient(#072239, #07d173);
-      border-radius: 50%;
-      z-index: -1;
-      content: " ";
-      position:relative;
-      }
-    
-    p{
-      color:#000000;
-      font-family: sans-serif;
-      font-size:16px;
-      padding-left:30px;
-      padding-right:30px;
-      padding-bottom:20px;
-    }
-
-    h2{
-      color:#000000;
-      font-family: sans-serif;
-      font-style:bold;
-      font-size:24px;
-      padding-left:30px;
-      padding-top:20px;
-    }
-
-    .carte{
-      margin-right:40px;
-      transition-property: transform;
       transition: all 0.3s ease-in-out;
     }
-    .carte:hover {
-      transform: scale(1.05);
+
+    .carte:hover .texte {
+      background-color: #dddddd;
+    }
+
+
+    .dustin {
+      background-image: linear-gradient(#e8f5ff, #45b2ff);
+      border-radius: 50%;
+      z-index: -1;
+      content: " ";
+      position: relative;
+    }
+
+    .lucas {
+      background-image: linear-gradient(#ffa76a, #ff4431);
+      border-radius: 50%;
+      z-index: -1;
+      content: " ";
+      position: relative;
+    }
+
+    .onze {
+      background-image: linear-gradient(#9a8478, #1e130c);
+      border-radius: 50%;
+      z-index: -1;
+      content: " ";
+      position: relative;
+    }
+
+    .mike {
+      background-image: linear-gradient(#072239, #07d173);
+      border-radius: 50%;
+      z-index: -1;
+      content: " ";
+      position: relative;
 
     }
-</style>
+
+    p {
+      color: #000000;
+      font-family: sans-serif;
+      font-size: 16px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      display: block;
+    }
+
+    h2 {
+      color: #000000;
+      font-family: sans-serif;
+      font-style: bold;
+      font-size: 24px;
+      padding-left: 30px;
+      padding-top: 20px;
+      display: block;
+      
+    }
+
+    .carte {
+      transition-property: transform;
+      transition: all 0.3s ease-in-out;
+      flex-direction: column;
+      margin-right: 20px;
+    }
+
+    .strangerThings {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    .carte:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width:600px) {
+      .carte {
+        width: 47%;
+      }
+    }
+
+    @media (min-width:900px) {
+      .carte {
+        width: 23%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-
-  <div class="carte">
-  <div class="person dustin">
+  <div class="strangerThings">
+    <div class="carte">
+    <div class="person dustin">
       <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin">
-  </div>
-  <div class="person texte">
-    <h2>Dustin</h2>
-    <p>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer 
-    et ses plaisanteries constantes
-    font de lui un personnage digne d'un roman de Stephen King.</p> 
+    </div>
+    <div class="person texte">
+      <h2>Dustin</h2>
+      <p>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer
+        et ses plaisanteries constantes
+        font de lui un personnage digne d'un roman de Stephen King.</p>
+    </div>
+    </div>
+
+    <div class="carte">
+    <div class="person lucas">
+      <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas">
+    </div>
+    <div class="person texte">
+      <h2>Lucas</h2>
+      <p>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe,
+        mais finit par l'accepter. Geek, comme le reste de ses amis, il manie
+        adroitement une fronde, ce qui se révèle utile contre le Demogorgon.</p>
+    </div>
   </div>
 
-
-  <div class="person lucas">
-    <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas">
-  </div>
-  <div class="person texte">
-    <h2>Lucas</h2>
-    <p>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe, 
-      mais finit par l'accepter. Geek, comme le reste de ses amis, il manie 
-      adroitement une fronde, ce qui se révèle utile contre le Demogorgon.</p> 
-  </div>
-
-
-  <div class="person onze">
-    <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze"> 
-  </div>
-  <div class="person texte">
-    <h2>Onze</h2>
-    <p>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger 
-     Things. Elle est la seule à posséder des super pouvoirs. D'un simple 
-     saignement de nez, elle peut réaliser des choses impressionnantes avec
-     son esprit et sauver ses camarades.</p>
+    <div class="carte">
+    <div class="person onze">
+      <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze">
+    </div>
+    <div class="person texte">
+      <h2>Onze</h2>
+      <p>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger
+        Things. Elle est la seule à posséder des super pouvoirs. D'un simple
+        saignement de nez, elle peut réaliser des choses impressionnantes avec
+        son esprit et sauver ses camarades.</p>
+    </div>
   </div>
 
-
-  <div class="person mike">
-    <img src="https://i.imgur.com/3eG4ete.png" alt="Mike"> 
-  </div>
-  <div class="person texte">
-    <h2>Mike</h2>
-    <p>La série est centrée sur Mike et sa famille. Il est celui qui 
-    accueil Onze et se soucie le plus d'elle. Bienveillant, il aime 
-    Star Wars, Dungeons et Dragons et compagnie.</p>
+    <div class="carte">
+    <div class="person mike">
+      <img src="https://i.imgur.com/3eG4ete.png" alt="Mike">
+    </div>
+    <div class="person texte">
+      <h2>Mike</h2>
+      <p>La série est centrée sur Mike et sa famille. Il est celui qui
+        accueil Onze et se soucie le plus d'elle. Bienveillant, il aime
+        Star Wars, Dungeons et Dragons et compagnie.</p>
+    </div>
   </div>
 </div>
 
+
 </body>
+
 </html>
